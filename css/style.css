@@ -95,7 +95,7 @@ div#button-wrapper{
 
 	.container{
 		width:1024px;
-		top:250px;
+		top:150px;
 	}
 	.container p {
 		padding: 0px;
@@ -126,6 +126,13 @@ div#button-wrapper{
 		min-width: 300px;
 		padding:30px;
 		font-size:2em;
+	}
+}
+
+
+@media screen and (min-width: 1440px){
+	.container{
+		top:250px;
 	}
 }
 
