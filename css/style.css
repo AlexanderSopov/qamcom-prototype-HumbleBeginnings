@@ -1,0 +1,95 @@
+*{
+	margin:0px;
+	padding:0px;
+	font-family: "Gentium Basic"
+}
+h1, h2, p{
+	padding-top:20px;
+}
+body {
+	color: black;
+	background: white;
+	line-height: 1.2;
+}
+header#head{
+	background-color: white;
+	padding:20px;
+	position:fixed;
+	border-bottom: 1px solid black;
+	width:100%;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+	z-index: 1;
+}
+
+.container{
+	position:relative;
+	top: 120px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.container > * {
+	width: calc(100% - 40px);
+	margin:20px;
+	position: relative;
+	left:-50px;
+	display: none;
+}
+
+#graphic img{
+	width:100%;
+	max-width:150px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button#call-to-action{
+    background-color: #29abe2;
+    border:none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    min-width:250px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+
+#navbar{
+	display: none;
+}
+
+@media screen and (min-width: 768px){
+	.container{
+		width:769px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.container > * {
+		width: calc(100% - 60px);
+		margin:30px;
+		position: relative;
+		left:-50px;
+		display: none;
+	}
+	#graphic{
+		order: 0;
+		width: calc(45% - 60px);
+	}
+	#graphic img{
+		max-width:300px;
+	}
+	.container header{
+		order: -1;
+		width: calc(55% - 60px);
+	}
+}
+
+
+
