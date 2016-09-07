@@ -73,7 +73,7 @@ button#call-to-action{
 	}
 	.container > * {
 		width: calc(100% - 60px);
-		margin:30px;
+		margin:20px 30px;
 	}
 	.container header{
 		order: -1;
