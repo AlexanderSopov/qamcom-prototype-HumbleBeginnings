@@ -60,6 +60,9 @@ button#call-to-action{
     transition-duration: 0.4s;
 }
 
+div#button-wrapper{
+	margin:auto;
+}
 
 #navbar{
 	display: none;
@@ -84,24 +87,43 @@ button#call-to-action{
 		width: calc(45% - 60px);
 	}
 	#graphic img{
-		max-width:250px;
+		max-width:300px;
 	}
 }
 
 @media screen and (min-width: 1024px){
+
 	.container{
 		width:1024px;
+		top:250px;
 	}
 	.container p {
 		padding: 0px;
 		width:calc(55% - 60px);
+		font-size:1.3em;
+	}
+	.container header h1{
+		padding:0px;
+		font-size:3em;
+	}
+	.container header h2{
+		font-size:2em;
+	}
+
+	.container header{
+		order: -1;
+		width: calc(55% - 60px);
+	}
+	#graphic{
+		order: 0;
+		width: calc(45% - 60px);
 	}
 	.container div#button-wrapper {
-		margin:auto;
 		width:calc(45% - 60px);
 	}
 
 	button#call-to-action{
+		min-width: 300px;
 		padding:30px;
 		font-size:2em;
 	}
