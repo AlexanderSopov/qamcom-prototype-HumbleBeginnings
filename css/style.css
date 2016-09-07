@@ -32,7 +32,7 @@ header#head{
 }
 .container > * {
 	width: calc(100% - 40px);
-	margin:20px;
+	margin:10px 20px;
 	position: relative;
 	left:-50px;
 	display: none;
@@ -74,20 +74,36 @@ button#call-to-action{
 	.container > * {
 		width: calc(100% - 60px);
 		margin:30px;
-		position: relative;
-		left:-50px;
-		display: none;
+	}
+	.container header{
+		order: -1;
+		width: calc(55% - 60px);
 	}
 	#graphic{
 		order: 0;
 		width: calc(45% - 60px);
 	}
 	#graphic img{
-		max-width:300px;
+		max-width:250px;
 	}
-	.container header{
-		order: -1;
-		width: calc(55% - 60px);
+}
+
+@media screen and (min-width: 1024px){
+	.container{
+		width:1024px;
+	}
+	.container p {
+		padding: 0px;
+		width:calc(55% - 60px);
+	}
+	.container div#button-wrapper {
+		margin:auto;
+		width:calc(45% - 60px);
+	}
+
+	button#call-to-action{
+		padding:30px;
+		font-size:2em;
 	}
 }
 
