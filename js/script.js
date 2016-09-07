@@ -1,5 +1,5 @@
-$(document).ready(() => {
-	$(".container > *").each((i, el)=>{
+$(document).ready(function (){
+	$(".container > *").each(function (i, el){
 		module.fadeIn($(el));
 	});
 });
